@@ -69,6 +69,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <receiver android:name=".AlarmManagerBroadcast" />
+        <service android:name=".MyJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>
